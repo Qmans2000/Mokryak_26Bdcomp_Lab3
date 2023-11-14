@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+input, label, p{
+    text-wrap: wrap;
+    color: rgb(94, 97, 114);
+    font-size: 0.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+label{
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+.laber1{
+    font-size: 0.83rem;
+    font-weight: 500;
+}
+
+.bold{
+    font-weight:bolder;
+}
+.bigger{
+    font-size: 1.15rem;
+}
+.smol{
+    font-size: 0.6rem;
+}
+.shadow{
+    color:rgb(148, 149, 165);
+    text-wrap: wrap;
+}
+.green{
+    color: rgb(50, 205, 73);
+}
+.underline{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 5px;
+}
+h1 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: rgb(58, 59, 67);
+    font-size: 1.2rem; /* Размер шрифта для заголовков будет 32px (2rem * 16px) */
+}
+h3{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    padding: 0px 160px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.vertical-separator {
+    width: 2px;
+    height: 120px;
+    background: linear-gradient(to top, transparent, rgb(223, 226, 232), transparent);}
+
+.child-block {
+    flex: 1;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.header-img{
+    width: 50px;
+    height: 50px;
+    filter: brightness(1.7);
+}
+.img-green{
+    filter: hue-rotate(250deg) brightness(1.5);
+}
+
+.horizontal-separator {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, transparent, rgb(223, 226, 232), transparent);
+    margin: 10px 0;
+}
+
+
+.payment {
+    height: auto;
+    margin-bottom: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 0 10%;
+    position: relative;
+}
+.button-box{
+    position: relative;
+    top: -150px;
+    padding: 15px 160px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.payment-block {
+    width: 50%; /* Уменьшил ширину, чтобы оставить место для summary-block */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.payment-type > *:not(.no-margin) {
+    margin: 10px 0 0 18px;
+}
+.payment-type > *:not(img) {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+.payment-type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 110px;
+    position: relative;
+    z-index: 0;
+
+    
+}
+.PayPal {
+    background-color: whitesmoke;
+
+}
+
+
+input[type='radio'] {
+    position: relative;
+    filter: hue-rotate(250deg) brightness(1.5);
+    top: 3px;
+    left: -7px;
+}
+
+/* Оставлен только стиль для изображения PayPal */
+.paypal-image {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 73px;
+    height: 18px;
+}
+.other-image {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 100px;
+    height: 20px;
+}
+.header-text {
+    width: 100%;
+    margin: 30px 0px 20px 0px;
+    display: flex;
+    justify-content: flex-start; /* Изменил значение на flex-start */
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+
+.border {
+
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*блокиблокиблоки*/
+
+
+
+
+
+.input-block {
+    border-radius: 5px;
+    margin: 0px 20px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block label {
+    margin-bottom: 2px;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.field-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3px;
+    position: relative;
+    width: 50%;
+}
+
+.input-block input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+#field1, #field2, #field3, #field4{
+    height: 35px;
+}
+
+.checkbox,
+.card-image,
+.expiry-text {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#field1{
+    background-color: rgba(95, 218, 142, 0.1);
+    border-color: rgb(118, 234, 162) ;
+    border: 4px, solid ;
+}
+
+.checkbox {
+    border-radius: 50%;
+    position: absolute;
+    filter: brightness(1.5);
+    right: 35px;
+    top: 389px; /* Положение по вертикали будет относительно родительского элемента */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    opacity: 1;
+}
+.card {
+    width: 25px;
+    height: 25px;
+    filter: brightness(2.3) grayscale(1);
+    position: absolute;
+    right: 15px;
+    top: 37px; /* Положение по вертикали будет относительно родительского элемента */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    opacity: 1;
+}
+
+
+.card-image {
+    background-color: lightgray;
+}
+
+.expiry-text {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+.down{
+    margin-bottom: 30px;
+}
+
+/*приколыы*/
+
+
+
+/* Добавленные стили для новых элементов */
+
+.summary-block {
+    width: 28%; /* Уменьшил ширину, чтобы оставить место для payment-block */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.thin-horizontal-separator {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgb(223, 226, 232), transparent);    margin: 10px 0;
+}
+
+.double-block {
+    display: flex;
+    width: 100%;
+}
+
+.left-block, .right-block {
+    padding: 10px;
+    padding-left: 0px;
+    width: 100%;
+}
+.left-block p, .right-block p{
+    margin-bottom: 8px;
+}
+
+.right-block{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.horizontal-separator {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, rgb(223, 226, 232), transparent);    margin: 10px 0;
+}
+
+.dynamic-height-block {
+    position: relative;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 60px 10px;
+    gap: 10%;
+    top: 30px;
+}
+
+.horizontal-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.vertical-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.horizontal-section img {
+    width: 24%;
+    padding: 37px 8px 30px 30px;
+}
+
+.text-block {
+    padding-bottom: 9px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.papa{
+    padding: 0px ;
+    flex-direction: column;
+}
+.papa p {
+    position: relative;
+    top: 25px;
+    margin: 7px 0px 0px 4px;
+}
+
+
+/*кнопкикнопиккнопкии*/
+
+.round-button {
+    display: inline-block;
+    padding: 12px 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.go-back-button {
+    background-color: #ffffff;
+    color: rgb(137, 143, 154);
+    border: 2px solid rgb(202, 204, 209);
+}
+
+.check-out-button {
+    padding: 12px 70px;
+    padding-left: 30px;
+    text-align: left;
+    background-color: rgb(50, 205, 73);
+    color: #fff;
+    border: 2px solid rgb(50, 205, 73);
+}
+
+/* При наведении меняем цвет фона */
+.go-back-button:hover {
+    background-color: #ececec;
+}
+
+.check-out-button:hover {
+    background-color: #35a368;
+}
+
+.arrow{
+    position: absolute;
+    top:61px;
+    right:200px;
+    width:25px;
+    height:28px;
+}
+.question{
+    width:13px;
+    height:13px; 
+    position: absolute;
+    right: 153px;
+    bottom: 35px; /* Положение по вертикали будет относительно родительского элемента */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+.question:hover{
+    filter: brightness(0.7);
+}
